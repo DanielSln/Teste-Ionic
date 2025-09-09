@@ -8,6 +8,10 @@ import { Route, RouterLink} from '@angular/router';
   styleUrls: ['home.page.scss'],
   imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonButton, RouterLink],
 })
+
 export class HomePage {
-  constructor() {}
-}
+  constructor(private router : Router) {}
+  IrParaDetalhes() {
+      this.router.navigateByUrl('/detalhes')
+    }
+  }
