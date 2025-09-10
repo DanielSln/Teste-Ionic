@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/angular/standalone';
-import { Route, RouterLink} from '@angular/router';
+import { Router, RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,6 +12,6 @@ import { Route, RouterLink} from '@angular/router';
 export class HomePage {
   constructor(private router : Router) {}
   IrParaDetalhes() {
-      this.router.navigateByUrl('/detalhes')
+      this.router.navigateByUrl('/details')
     }
   }
